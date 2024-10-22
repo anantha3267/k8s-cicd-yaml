@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: FlaskApp
-          image: anantha3267/flaskapp:replaceImageTag # Your Docker image name and tag
+          image: anantha3267/flaskapp:82
           ports:
             - containerPort: 5000 # Port your application is listening on
