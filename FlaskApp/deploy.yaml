@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: FlaskApp
+spec:
+  replicas: 3 # Number of replicas you want to run
+  selector:
+    matchLabels:
+      app: FlaskApp
+  template:
+    metadata:
+      labels:
+        app: FlaskApp
+    spec:
+      containers:
+        - name: FlaskApp
+          image: anantha/FlaskApp:replaceImageTag # Your Docker image name and tag
+          ports:
+            - containerPort: 5000 # Port your application is listening on
