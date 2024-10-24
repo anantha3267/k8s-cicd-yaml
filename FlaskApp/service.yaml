@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: FlaskApp-service
+  name: flaskApp-service
 spec:
   selector:
-    app: FlaskApp
+    app: flaskapp
   ports:
     - protocol: TCP
       port: 5000 # Port to expose on the service
