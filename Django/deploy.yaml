@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django
+spec:
+  replicas: 3 # Number of replicas you want to run
+  selector:
+    matchLabels:
+      app: django
+  template:
+    metadata:
+      labels:
+        app: django
+    spec:
+      containers:
+        - name: django
+          image: anantha3267/django:replaceImageTag # Your Docker image name and tag
+          ports:
+            - containerPort: 8000 # Port your application is listening on
