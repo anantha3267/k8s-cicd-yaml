@@ -32,6 +32,7 @@ def count_lines(file_path):
 
 if __name__ == "__main__":
     if len(sys.argv)!=2:
+        print(f"Expected 1 argument, but got {len(sys.argv) - 1}. Arguments: {sys.argv[1:]}")
         print("python3 Code_Quality.py <filename>")
     else:
         file_path = sys.argv[1]
