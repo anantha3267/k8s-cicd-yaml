@@ -13,8 +13,8 @@ def count_lines(file_path):
                 if line.strip().startswith("#"):
                     comment_count += 1
         print(f"The file '{file_path}' contains {line_count} lines.")
-        print(f"Empty lines: {empty_lines}")
-        print(f"Comment lines: {comment_lines}")
+        print(f"Empty lines: {empty_count}")
+        print(f"Comment lines: {comment_count}")
 
         MAX_EMPTY_LINES = 2
         MAX_COMMENT_LINES = 5
