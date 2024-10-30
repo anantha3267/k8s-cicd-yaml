@@ -32,7 +32,7 @@ def count_lines(file_path):
 
 if __name__ == "__main__":
     if len(sys.argv)!=2:
-        print("python Count_Empty_Comment_and_Line_Count.py <filename>")
+        print("python3 Code_Quality.py <filename>")
     else:
         file_path = sys.argv[1]
         line_count, empty_lines, comment_lines = count_lines(file_path)
